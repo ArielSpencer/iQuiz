@@ -24,6 +24,7 @@ class DesempenhoViewController: UIViewController {
     }
     
     func configurarLayout() {
+        navigationItem.hidesBackButton = true
         botaoReiniciarQuiz.layer.cornerRadius = 12
     }
 

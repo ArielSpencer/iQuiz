@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     }
 
     func configuraLayout() {
+        navigationItem.hidesBackButton = true
         botaoIniciarQuiz.layer.cornerRadius = 12
         
 //        botaoIniciarQuiz.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
