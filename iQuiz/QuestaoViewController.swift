@@ -22,6 +22,12 @@ class QuestaoViewController: UIViewController {
             pontuacao += 1
             print("O usuário acertou")
         }
+        
+        if numeroQuestao < questoes.count - 1 {
+            numeroQuestao += 1
+            configurarQuestao()
+        }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
