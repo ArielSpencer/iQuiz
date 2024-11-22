@@ -8,13 +8,24 @@
 import UIKit
 
 class DesempenhoViewController: UIViewController {
+    
+    var pontuacao: Int?
 
+    @IBOutlet weak var resultadoLabel: UILabel!
+    
+    @IBOutlet weak var percentualLabel: UILabel!
+    
+    @IBOutlet weak var botaoReiniciarQuiz: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configurarLayout()
     }
     
+    func configurarLayout() {
+        botaoReiniciarQuiz.layer.cornerRadius = 12
+    }
 
     /*
     // MARK: - Navigation
